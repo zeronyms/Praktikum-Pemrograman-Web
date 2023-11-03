@@ -140,6 +140,7 @@ header .nav {
     display: flex;
     justify-content: space-evenly;
     padding: 40px 0;
+    margin-bottom: 10px;
 }
 .card {
     width: 180px;
