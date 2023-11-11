@@ -3,89 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <form class="border-red">  
-        <div class="row border-green">
-            <div class="label">
-                <label for="makanan">Makanan:</label>
-            </div>
-            <div class="input">
-                <select id="makanan">
-                    <option value="">--Please choose an option--</option>
-                    <option value="10000">Ayam</option>
-                    <option value="20000">Bebek</option>
-                    <option value="50000">Kambing</option>
-                    <option value="5000">Lele</option>
-                </select>
-            </div>
+    <header>
+        <h1>Tic Tac Toe Using Javascript DOM Manipulation</h1>
+    </header>
+    <main>
+        <!-- <h1>Player Turn</h1> -->
+        <section class="container">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </section>
+        <div class="status" id="status">
+            <!-- Display game status here -->
         </div>
-
-        <div class="row border-green">
-            <div class="label">
-                <label for="jumlah">Jumlah:</label>
-            </div>
-            <div class="input">
-                <input type="text" id="jumlah" name="jumlah" required>
-            </div>
+        <div class="button">
+            <button id="reset">Reset</button>
         </div>
+    </main>
+    <footer>
 
-        <div class="row border-green">
-            <div class="label">
-                <label for="voucher">voucher:</label>
-            </div>
-            <div class="input">
-                <input type="text" id="voucher" name="voucher">
-            </div>
-        </div>
-
-        <div class="row button">
-            <input type="button" value="Submit" onclick="addData()">
-        </div>
-    </form>
-
-    <table>
-        <tr class="row">
-            <td>Nama Pesanan: </td>
-            <td class="nama"></td>
-        </tr>
-        <tr class="row">
-            <td>Jumlah Pesanan: </td>
-            <td class="jumlah"></td>
-        </tr>
-        <tr class="row">
-            <td>Total Diskon: </td>
-            <td class="diskon"></td>
-        </tr>
-        <tr class="row">
-            <td>Total Harga: </td>
-            <td class="total"></td>
-        </tr>
-    </table>
-
-    <script>
-        function addData(){
-            let totalHarga = 0
-            const diskon = 0.2
-            const harga = document.getElementById("makanan").value
-            let namaMakanan = document.getElementById("makanan")
-            let selected = namaMakanan.options[namaMakanan.selectedIndex].text
-            const jumlah = document.getElementById("jumlah").value
-            const voucher = document.getElementById("voucher").value
-            hitungBill(harga, jumlah)
-            function hitungBill(harga, jumlah) {
-                totalHarga = harga*jumlah;
-            }
-            if (voucher === "ASPRAKLEONGANTENG") {
-                totalHarga = totalHarga - (totalHarga*diskon);
-            }
-            document.querySelector(".nama").textContent = selected;
-            document.querySelector(".jumlah").textContent = jumlah;
-            document.querySelector(".diskon").textContent = diskon;
-            document.querySelector(".total").textContent = totalHarga;
-        }
-    </script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
