@@ -26,11 +26,9 @@ body {
 /* ======================================================== */
 header .nav {
     /* padding: 8px 20px; */
-    display: flex;
-    flex-direction: column;
     padding: 5px;
     position: sticky;
-    /* height: 13vh; */
+    height: 13vh;
     background-color: #B9B4C7;
 }
 .top-nav {
@@ -46,7 +44,6 @@ header .nav {
 }
 .bot-nav {
     justify-content: space-between;
-    padding: 10px;
 }
 .search-box{
     text-align: center;
@@ -102,8 +99,8 @@ header .nav {
 }
 
 .big-banner article h1 {
-    color: #383531;
-    font-size: 3.5rem;
+    color: #FAF0E6;
+    font-size: 3rem;
 }
 .big-banner article p {
     color: #FAF0E6;
@@ -172,7 +169,6 @@ header .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
 }
 .text-section .title {
     align-items: flex-start;
@@ -310,53 +306,4 @@ td{
     font-weight: 700;
     text-align: center;
     padding: 20px 0;
-}
-
-/* =========This is what they say section=========== */
-.comment-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-.comment-top-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-}
-.comment-bot-sec {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-}
-.comment-section .hero {
-    text-align: left;
-    padding: 20px;
-}
-.comment-slider {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.comment-slider button {
-    background-color: #352F44;
-    border-color: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-}
-.comment-section aside{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-.comment-section article{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#customerImage{
-    height: 320px;
-    width: 220px;
-    border-radius: 20px;
 }
