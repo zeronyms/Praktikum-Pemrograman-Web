@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -29,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style.css"/>
     <script src="https://kit.fontawesome.com/16ffd14b17.js" crossorigin="anonymous"></script>
 </head>
 
@@ -73,3 +74,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
 
 </html>
+
