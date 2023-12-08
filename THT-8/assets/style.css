@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap'); */
+
+/* debug border */
+.border-red {
+    border: 1px solid red;
+}
+.border-purple{
+    border: 1px solid purple;
+}
+.border-green{
+    border: 1px solid green;
+}
+.flex-container {
+    display: flex;
+}
+/* ======================================================== */
+header .nav {
+    /* padding: 8px 20px; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: sticky;
+    /* height: 13vh; */
+    background-color: #B9B4C7;
+}
+.top-nav {
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.top-nav nav {
+    gap: 0.5rem;
+}
+.top-nav nav a {
+    text-decoration: none;
+    color: #352F44;
+}
+.bot-nav {
+    justify-content: space-between;
+    padding: 10px;
+}
+.search-box{
+    text-align: center;
+    background-color: #FAF0E6;
+}
+.bot-nav nav {
+    /* border: 1px solid blueviolet; */
+    align-items: center;
+    gap: 0.5rem;
+}
+.bot-nav nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #352F44;
+}
+.bot-nav nav a:hover,.top-nav nav a:hover {
+    color: #FAF0E6;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-color: #FAF0E6;
+}
+.bot-nav h1 {
+    font-weight: 600;
+    color: #352F44;
+    font-size: 3rem;
+}
+/* ================================== */
+.big-banner {
+    flex-direction: column;
+    justify-content: center;
+    /* opacity: 0.95; */
+    background-image: url(images/Jeannie\ Contemporary\ Fabric\ 3\ Seater\ Sofa\ -\ Light\ Blush.jpeg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: top 60% right 0;
+    padding: 50px;
+    
+}
+.big-banner article{
+    justify-content: flex-start;
+    width: 50%;
+}
+.btn-container {
+    width: 50%;
+    justify-content: space-around;
+}
+.vertical-divider {
+    border-right: 1px solid #FAF0E6;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.big-banner article h1 {
+    color: #383531;
+    font-size: 3.5rem;
+}
+.big-banner article p {
+    color: #FAF0E6;
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin-top: 5vh;
+}
+.btn-container {
+    /* border: 1px solid teal; */
+    padding: 5px;
+    display: flex;
+    margin-top: 12vh;
+}
+
+.btn{
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn-container p {
+    color: #FAF0E6;
+    font-size: 1.25rem;
+}
+
+.title {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    margin-bottom: 10px;
+}
+.card {
+    width: 180px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.card p {
+    padding-top: 20px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.img-section {
+    display: flex;
+    justify-content: center;
+}
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.text-section .title {
+    align-items: flex-start;
+}
+.text-section .title h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.text-section .title {
+    margin-bottom: 20px;
+}
+.img-section img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+/* ================================= */
+footer {
+    background-color: #B9B4C7;
+    color: white;
+}
+.top-footer {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.top-footer div {
+    width: 25%;
+    text-align: center;
+}
+.bottom-footer {
+    border: 1px solid red;
+    text-align: center;
+}
+
+/* ======================================== */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    /* background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%); */
+}
+
+.container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.container form .row .col{
+    flex:1 1 250px;
+}
+
+.container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+    margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #27ae60;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+    background: #2ecc71;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto;
+}
+td{
+    border: 1px solid #DBE2EF;
+    text-align: left;
+    padding: 8px;
+}
+.hero{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* =========This is what they say section=========== */
+.comment-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.comment-top-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+.comment-bot-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.comment-section .hero {
+    text-align: left;
+    padding: 20px;
+}
+.comment-slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.comment-slider button {
+    background-color: #352F44;
+    border-color: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.comment-section aside{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.comment-section article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#customerImage{
+    height: 320px;
+    width: 220px;
+    border-radius: 20px;
+}
