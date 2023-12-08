@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
     font-family: 'Poppins', sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap'); */
@@ -359,4 +358,111 @@ td{
     height: 320px;
     width: 220px;
     border-radius: 20px;
+}
+
+
+
+/* ============================================= */
+/* Login Page */
+.login-page-body{
+    background-color: #FAEED1;
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    background-color: #FDF7E4;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.login-title{
+    font-size: 3rem;
+    text-align: center;
+    /* color: purple; */
+}
+
+.wrapper span {
+    color: #bbab8c;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+
+    
+    outline: none;
+    border: 2px solid #BBAB8C;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #BBAB8C;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #BBAB8C;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    color: #BBAB8C;
+}
+
+.remember-forgot-password{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+.remember-forgot-password label input {
+    accent-color: #BBAB8C;
+    margin-right: 3px;
+}
+.remember-forgot-password a {
+    color: #BBAB8C;
+    text-decoration: none;
+}
+.remember-forgot-password a:hover {
+    text-decoration: underline;
+}
+.btn-login {
+    width: 100%;
+    height: 45px;
+    background-color: #BBAB8C;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .register{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register p a {
+    color: #BBAB8C;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover {
+    text-decoration: underline;
 }
