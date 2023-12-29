@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
+use function Ramsey\Uuid\v1;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('home');
+    return redirect()->route('homepage');
 });
+Route::get('/home',  function (){
+    return view('home');
+})->name('homepage');
+Route::get('/sesi', [SessionController::class, 'index']);
+Route::post('/sesi/login', [SessionController::class, 'login']);
